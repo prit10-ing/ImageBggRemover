@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Background Remover</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Background Remover</h1>
+    <p>Upload an image to remove the background</p>
+
+    <div class="upload-box" id="upload-box">
+      <input type="file" id="file-input" accept="image/*" hidden />
+      <button onclick="document.getElementById('file-input').click()">Choose Image</button>
+      <p>or drag & drop here</p>
+    </div>
+
+    <div class="images-preview" id="images-preview">
+      <div>
+        <h3>Original</h3>
+        <img id="original-image" src="#" alt="Original" />
+      </div>
+      <div>
+        <h3>Background Removed</h3>
+        <img id="removed-bg-image" src="#" alt="Removed BG" />
+      </div>
+    </div>
+  </div>
+  <a id="download-btn" class="download-btn" href="#" download="no-bg.png" style="display: none;">Download Image</a>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
